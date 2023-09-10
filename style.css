@@ -1,0 +1,101 @@
+ body, h1, h2, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+}
+
+
+header {
+    background-color: hsl(17, 49%, 60%);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-style: pacifico;
+}
+
+nav :hoover
+{
+color: #333;
+}
+
+
+.hero {
+    background-image: url("actresses-elizabeth-olsen-wallpaper-7990485d418a9d1b067728af20a156fd.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fbf9f7;
+    text-align: center;
+    padding: 150px 0;
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+.top-line {
+    background-color: #333;
+    color: #e24444;
+    text-align: right; 
+    padding: 10px 0;
+}
+
+
+.services {
+    background-color: #f7e9e0;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #824545;
+}
+
+.services .service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #824545;
+}
+
+.services li {
+    font-size: 18px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.services li:hover {
+    transform: translateY(-5px);
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
