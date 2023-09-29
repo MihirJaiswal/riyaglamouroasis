@@ -3,113 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:400,700" rel="stylesheet">
+    <title>Riya's Glamour Oasis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
-     <title>Riya's Glamour Oasis</title>
 </head>
 <body>
-    <header>
-        <h1>Riya Glamour Oasis</h1>
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#appointment">Book Appointment</a>
-            <a href="#contact">Contact</a>
+    <section id="header" class="header">
+        <a href="#" class="logo"><i class="fas fa-female"></i>Riya Glamour Oasis</a>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#shop">Shop</a>
+          <a href="#contact">Contact</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#blogs">Blogs</a>
         </nav>
-    </header>
-
-   
-
-    <section class="hero">
-        <h1>Riya Glamour Oasis</h1>
-        <p>Your Ultimate Beauty Destination</p>
+        <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
     </section>
 
-    <section class="services">
-       
-        <h2>Services We Provide</h2>
-        <ul class="service-list">
-            <li>
-                <img src="decoded-makeup_OI (1).jpg" alt="Makeup" height="300" width="300" />
-                <br>
-                Makeup
-            </li>
-            <li>
-                <img src="facials-1024x630 (1).jpg" alt="Facial" height="300" width="300"/>
-                <br>
-                Facial
-            </li>
-            <li>
-                <img src="d-tan41646649742 (2).jpg" alt="Detan" height="300" width="300"/>
-                <br>
-                Detan
-            </li>
-            <li>
-                <img src="soins-corps-pedicure (1).jpg" alt="Pedicure" height="300" width="300" />
-                <br>
-                Pedicure
-            </li>
-            <li>
-                <img src="What-Is-A-Spa-Manicure-3-1440x962 (1).jpg" alt="Manicure" height="300" width="300"/>
-                <br>
-                Manicure
-            </li>
-            <li>
-                <img src="eyebrowthreading-lashandbrowcorner (1).jpg" alt="Eyebrow" height="300" width="300"/>
-                <br>
-                Eyebrow
-            </li>
-            <li>
-                <img src="skincare-tips-after-threading-face-featured (1).jpg" alt="Forehead" height="300" width="300" />
-                <br>
-                Forehead
-            </li>
-            <li>
-                <img src="Eyebrow-Threading4 (1).jpg" alt="Upper Lips" height="300" width="300" />
-                <br>
-                Upper Lips
-            </li>
-            <li>
-                <img src="Benefits-of-Hand-Massage-Therapy-for-Seniors (1).jpg" alt="Hand Massage" height="300" width="300"/>
-                <br>
-                Hand Massage
-            </li>
-            <li>
-                <img src="Foot-Reflexology-Massage-downtown-san-diego (1).jpg" alt="Foot Massage" height="300" width="300"/>
-                <br>
-                Foot Massage
-            </li>
-            <li>
-                <img src="pexels-skg-photography-4833391 (1).jpg" alt="Bridal Makeup" height="300" width="300"/>
-                <br>
-                Bridal Makeup
-            </li>
-            <li>
-                <img src="ScoobyDooVibes-3b253371a77348929a3a6797f749bd76.jpg" alt="Nail Art" height="300" width="300"/>
-                <br>
-                Nail Art
-            </li>
-            <li>
-                <img src="Waxing-MOBILE-BANNER-1 (1).jpg" alt="Waxing" height="300" width="300" />
-                <br>
-                Waxing
-            </li>
-            <li>
-                <img src="pexels-engin-akyurt-3065171 (1).jpg" alt="Hairstyle"height="300" width="300" />
-                <br>
-                Hairstyle
-            </li>
-            <li>
-                <img src="hair-smoothening-treatment (1).jpg" alt="Hair Smoothing" height="300" width="300"/>
-                <br>
-                Hair Smoothing
-            </li>
-        </ul>
+    <section class="home" id="home">
+        <div class="slide active" style="background:url(img/cover1.jpg) no-repeat; background-size:cover; background-position: center;">
+           <div class="content">
+            <span>Embrace <br> Your <br> Radiance</span>
+            <h3>Lorem ipsum dolor sit amet consectetur <br>
+                 Nemo, modi. Culpa quis eaque quam !
+            </h3>
+            <a href="#" class="btn">ream more</a>
+           </div>
+        </div>
+
+        <div class="slide" style="background:url(img/cover.jpg) no-repeat; background-size:cover; background-position: center;">
+            <div class="content">
+             <span>Embrace <br> Your <br> Radiance</span>
+             <h3>Lorem ipsum dolor sit amet consectetur,<br>
+                 A quisquam neque quidem, !
+             </h3>
+             <a href="#" class="btn">ream more</a>
+            </div>
+         </div>
+
+         <div class="slide" style="background:url(img/cover2.jpg) no-repeat; background-size:cover; background-position: center;">
+            <div class="content">
+             <span>Embrace <br> Your <br> Radiance</span>
+             <h3>Lorem ipsum dolor sit amet, consectetur <br>
+                Consequatur perspiciatis nobis dolore!
+             </h3>
+             <a href="#" class="btn">read more</a>
+            </div>
+         </div>
+         <div id="next-slide" onclick="next()" class="fas fa-angle-right"></div>
+         <div id="prev-slide" onclick="prev()" class="fas fa-angle-left"></div>
     </section>
 
-    <!-- Add more sections for appointment, contact, etc. -->
+ <div class="features">
+        
+     <div class="feature">
+        <img src="img/category-1.png" alt="" class="featureIcon">
+         <span class="featureTitle">COSMETICS</span>
+    </div>
+     <div class="feature">
+         <img src="img/category-2.png" alt="" class="featureIcon">
+         <span class="featureTitle">MAKE UP</span>
+    </div>
+    <div class="feature">
+        <img src="img/category-3.png" alt="" class="featureIcon">
+        <span class="featureTitle">POWDER</span>
+    </div>
+    <div class="feature">
+        <img src="img/category-4.png" alt="" class="featureIcon">
+        <span class="featureTitle">LOTIONS</span>
+    </div>
+    <div class="feature">
+        <img src="img/category-5.png" alt="" class="featureIcon">
+        <span class="featureTitle">LIPSTICKS</span>
+    </div>
+    <div class="feature">
+        <img src="img/category-6.png" alt="" class="featureIcon">
+        <span class="featureTitle">MASCARA</span>
+    </div>
 
-    <footer>
-        <p>&copy; 2023 Riya's Glamour Oasis. All rights reserved.</p>
-    </footer>
+ </div>
+
+ <section class="shop" id="shop">
+    <div class="heading1">
+        <h1>Featured Products</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum aperiam reprehender
+            it sit aliquam corrupti maiores!</p>
+    </div>
+
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="image">
+                            <span class="discount">-25%</span>
+                            <img src="img/product2.jpg">
+                            <div class="icons">
+                                <a href="#" class="fas fa-shopping-cart"></a>
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p>beauty products</p>
+                            <div class="price">599 <span>799</span>
+                            </div>
+                        </div>
+                        </div>
+
+
+                        <div class="swiper-slide slide">
+                            <div class="image">
+                                <span class="discount">-25%</span>
+                                <img src="img/product3.jpg">
+                                <div class="icons">
+                                    <a href="#" class="fas fa-shopping-cart"></a>
+                                    <a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="fas fa-share"></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <p>beauty products</p>
+                                <div class="price">599 <span>799</span>
+                                </div>
+                            </div>
+                            </div>
+
+
+
+
+                            <div class="swiper-slide slide">
+                                <div class="image">
+                                    <span class="discount">-25%</span>
+                                    <img src="img/product4.jpg">
+                                    <div class="icons">
+                                        <a href="#" class="fas fa-shopping-cart"></a>
+                                        <a href="#" class="fas fa-heart"></a>
+                                        <a href="#" class="fas fa-share"></a>
+                                    </div>
+                                </div>
+                                <div class="content">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <p>beauty products</p>
+                                    <div class="price">599 <span>799</span>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="swiper-slide slide">
+                                    <div class="image">
+                                        <span class="discount">-25%</span>
+                                        <img src="img/product8.jpg">
+                                        <div class="icons">
+                                            <a href="#" class="fas fa-shopping-cart"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-share"></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <p>beauty products</p>
+                                        <div class="price">599 <span>799</span>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="swiper-slide slide">
+                                        <div class="image">
+                                            <span class="discount">-25%</span>
+                                            <img src="img/product9.jpg">
+                                            <div class="icons">
+                                                <a href="#" class="fas fa-shopping-cart"></a>
+                                                <a href="#" class="fas fa-heart"></a>
+                                                <a href="#" class="fas fa-share"></a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <p>beauty products</p>
+                                            <div class="price">599 <span>799</span>
+                                            </div>
+                                        </div>
+                                        </div>
+
+
+
+                                <div class="swiper-slide slide">
+                                    <div class="image">
+                                        <span class="discount">-25%</span>
+                                        <img src="img/product5.jpg">
+                                        <div class="icons">
+                                            <a href="#" class="fas fa-shopping-cart"></a>
+                                            <a href="#" class="fas fa-heart"></a>
+                                            <a href="#" class="fas fa-share"></a>
+                                        </div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <p>beauty products</p>
+                                        <div class="price">599 <span>799</span>
+                                        </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="swiper-slide slide">
+                                        <div class="image">
+                                            <span class="discount">-25%</span>
+                                            <img src="img/product6.jpg">
+                                            <div class="icons">
+                                                <a href="#" class="fas fa-shopping-cart"></a>
+                                                <a href="#" class="fas fa-heart"></a>
+                                                <a href="#" class="fas fa-share"></a>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </div>
+                                            <p>beauty products</p>
+                                            <div class="price">599 <span>799</span>
+                                            </div>
+                                        </div>
+                                        </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+ </section>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
+
