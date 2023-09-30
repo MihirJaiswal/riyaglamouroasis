@@ -55,3 +55,25 @@ var swiper = new Swiper(".product-slider", {
         },
       },
   });
+
+  var swiper = new Swiper(".reviews-slider", {
+    loop:true,
+    grabeCursor : true,
+    spaceBetween:20,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            
+          },
+
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        991: {
+          slidesPerView: 3,
+        },
+      
+      },
+  });
+
