@@ -78,7 +78,7 @@ section{
     font-weight: bolder;
 }
 .header .logo i{
-    color: red;
+    color: #ff08b9;
 }
 .header .navbar a{
     margin: 0 1.5rem;
@@ -86,7 +86,7 @@ section{
     color: #222;
 }
 .header .navbar a:hover{
-    color: red;
+    color: #ff08b9;
 }
 
 .header .icons div,
@@ -106,7 +106,7 @@ section{
 
 .header .icons a:hover,
 .header .icons div:hover{
-    background: red;
+    background: #ff08b9;
     color: white;
 }
 .header #menu-btn{
@@ -176,7 +176,7 @@ section{
 
 .home #next-slide:hover,
 .home #prev-slide:hover{
-    background: #f5b400;
+    background: #ff08b9;
     color: rgb(255, 255, 255);
 
 }
@@ -287,7 +287,7 @@ section{
                     display: block;
 
                     &:hover{
-                        background: rgb(255, 88, 202);
+                        background: #ff08b9;
                         color: #eee;
                     }
                 }
@@ -329,9 +329,130 @@ section{
     color: black;
 }
 
+.btn3{
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    border-top:1px solid black ;
+    color: #050505;
+    font-size: 1.7rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    
+}
+.btn3:hover{
+    letter-spacing: .1rem;
+    color: #eee;
+    background-color: #ff08b9;
+}
+
+.service {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 2rem;
+    margin-top: -50px;
+}
+
+.service-info{
+   flex-basis: calc(20% - 20px);
+   background-color: #ffffff;
+   padding: 1.5rem;
+   border: border;
+   box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.17);
+   text-align: center;
+   margin-bottom: 40px;
+   animation: fadeIn 1s ease forwards;
+}
+
+.service-info h2 {
+    font-size: 1.8rem;
+    color: #333;
+    padding: 5px;
+}
 
 
+.service-info img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+.service-info img:hover{
+    transform: scale(1.05);
+}
 
+.service-info:hover{
+    transform: scale(1.08);
+    background-color: #fff4fc;
+}
+
+.btn4{
+    display: flex;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    border:1px solid black ;
+    margin-left: 630px;
+    color: #050505;
+    font-size: 1.9rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    cursor: pointer;
+    
+}
+
+.btn4:hover{
+    color: #eee;
+    background-color: #ff08b9;
+}
+
+.reviews-slider{
+    .slide{
+        width: 35rem;
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img{
+                height: 7rem;
+                width: 7rem;
+                border-radius: 50%;
+            }
+
+            h3{
+                font-size: 2rem;
+                color: #050505;
+            }
+
+            .stars i{
+                font-size: 1.7rem;
+                color: rgb(255, 191, 0);
+            }
+        }
+        .text{
+            padding: 2rem;
+            background:rgb(237, 233, 233) ;
+            border-radius: .5rem;
+            line-height: 2;
+            font-size: 1.6rem;
+            color: rgb(118, 114, 114);
+            position: relative;
+            margin-top: 2rem;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top:-1rem; left: 3rem;
+                height: 2rem;
+                width: 2rem;
+                background:rgb(237, 233, 233);
+                transform: rotate(45deg);
+            }
+
+        }
+    }
+}
 
 
 
@@ -386,6 +507,9 @@ section{
     .swiper-button-prev{
     display: none;
 }
+.service-info {
+    flex-basis: calc(50% - 20px); 
+}
 
 }
 
@@ -413,5 +537,8 @@ section{
      .featureTitle{
          margin: 10px;
      }
-     
+     .service-info {
+        flex-basis: calc(100% - 20px); 
+    }
 }
+
