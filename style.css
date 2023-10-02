@@ -923,6 +923,9 @@ ul {
   .container1 .contactform {
     padding: 50px 30px;
   }
+  .contact-us {
+    display: none;
+  }
    .quick-links {
     margin-left: 20px;
   }
