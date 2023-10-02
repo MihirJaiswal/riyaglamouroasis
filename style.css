@@ -923,18 +923,21 @@ ul {
   .container1 .contactform {
     padding: 50px 30px;
   }
-  .contact-us {
-    display: none;
+   .quick-links {
+    margin-left: 20px;
   }
-  .footer ul {
-    text-align: center;
+  .quick-links h3 {
+    font-size: 22px;
   }
-  .quick-links h3{
-     font-size: 20px;
- }
-    .imp-links h3{
-     font-size: 20px;
- }
+  .quick-links ul {
+    text-align: left;
+  }
+  .imp-links h3 {
+    font-size: 22px;
+  }
+  .imp-links ul {
+    text-align: right;
+  }
 }
 @media (max-width: 768px) {
   .header #menu-btn {
