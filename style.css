@@ -929,6 +929,12 @@ ul {
   .footer ul {
     text-align: center;
   }
+  .quick-links h3{
+     font-size: 20px;
+ }
+    .imp-links h3{
+     font-size: 20px;
+ }
 }
 @media (max-width: 768px) {
   .header #menu-btn {
