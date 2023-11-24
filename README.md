@@ -1,1 +1,1 @@
-# riyaglamouroasis.io
+# riyaglamouroasis
